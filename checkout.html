@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<meta charset="utf-8" />
+<meta name="viewpoint" content="width=device-width,initial-scal=1.0">
+<meta http-equip="X-UA-compatible" content="ie=edge">
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.store.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#E2E1DF ;">
+	  
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="pull-right" >
+	  <a style="color:#000000; font-size: 40px; font-family: Palatino Linotype;" href="index.html">ИП Романова</a>
+	</div> 
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	  
+		<ul class="navbar-nav ml-auto">
+		 <li class="nav-item">
+			<a style="color:#000000; font-size: 24px;" class="nav-link" href="index.html">Главная</a>
+		  </li>
+		 <li class="nav-item">
+			<a style="color:#000000;font-size: 24px;" class="nav-link" href="product.php">Каталог</a>
+		  </li>
+		  
+		  
+		  
+		  <li class="nav-item">
+			<a style="color:#000000;font-size: 24px;" class="nav-link" href="aboutus.html">О нас</a>
+		  </li>
+
+		  </li>
+		  <li class="nav-item">
+			<a style="color:#000000;font-size: 24px;" class="nav-link" href="contact.html">Обратная связь</a>
+		  </li>
+		  <li class="nav-item">
+			<a style="color:#000000;font-size: 24px;" class="nav-link" href="cart.html">Корзина</a>
+		
+		  </li>
+		  
+		  
+		</ul>
+	  </div>
+	</nav>
+
+</section>
+<body id="checkout-page">
+
+<div id="site">
+	
+	<div id="content">
+		<h1>Ваш заказ</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Наименование</th>
+					<th scope="col">Количество</th>
+					<th scope="col">Цена</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" action="send2.php" method="post" id="checkout-order-form" style="background-color: skyblue">
+		 	<h2>Детали заказа</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Заказ:</legend>
+		 		<div>
+		 			<label for="name">Имя</label>
+		 			<input type="text" name="name" id="name" data-type="string" data-message="Это поле не может быть пустым" />
+		 		</div>
+		 		<div>
+		 			<label for="email">Ваша почта</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Неправильный формат почты" />
+		 		</div>
+		 		<div>
+		 			<label for="city">Город</label>
+		 			<input type="text" name="city" id="city" data-type="string" data-message="Это поле не может быть пустым" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Адрес</label>
+		 			<input type="text" name="address" id="address" data-type="string" data-message="Это поле не может быть пустым" />
+		 		</div>
+		 		
+		 	</fieldset>
+		 	
+		 	
+		 	
+		 	<center><p><input type="submit" id="submit-order" value="Submit" class="btn btn-success" /></p></center>
+		 
+		 </form>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		Copyright &copy;
+	</footer>
+
+</body>
+</html>	
+
+    
+
